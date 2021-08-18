@@ -156,7 +156,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-read-only-property/main/LICENSE
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/stdlib
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 </section>
 
