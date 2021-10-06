@@ -62,7 +62,7 @@ obj.foo = 'boop';
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Read-only properties are **enumerable** and **non-configurable**.
@@ -109,9 +109,9 @@ try {
 
 ## See Also
 
--   [`@stdlib/utils/define-read-only-accessor`][@stdlib/utils/define-read-only-accessor]: define a read-only accessor.
--   [`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]: define a read-write accessor.
--   [`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]: define a write-only accessor.
+-   <span class="package-name">[`@stdlib/utils/define-read-only-accessor`][@stdlib/utils/define-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a read-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a read-write accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]</span><span class="delimiter">: </span><span class="description">define a write-only accessor.</span>
 
 </section>
 
