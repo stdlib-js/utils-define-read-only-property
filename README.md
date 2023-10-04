@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-read-only-property/tags). For example,
+
+```javascript
 import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { CHANGELOG.md, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, CONTRIBUTORS, LICENSE, Makefile, NOTICE, README.md, benchmark, branches.md, dist, docs, esm, examples, lib, node_modules, package.json, test, foo } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.1.1-esm/index.mjs';
+import { CHANGELOG.md, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, CONTRIBUTORS, LICENSE, Makefile, NOTICE, README.md, benchmark, branches.md, dist, docs, esm, examples, lib, node_modules, package.json, test, foo } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@esm/index.mjs';
 ```
 
 #### setReadOnly( obj, prop, value )
@@ -92,7 +97,7 @@ obj.foo = 'boop';
 <body>
 <script type="module">
 
-import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.1.1-esm/index.mjs';
+import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
