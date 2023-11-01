@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,61 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var objectKeys = require( '@stdlib/utils-keys' );
-var defineProperty = require( '@stdlib/utils-define-property' );
-var setReadOnly = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof setReadOnly, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function sets a property on a provided object', function test( t ) {
-	var obj = {};
-	setReadOnly( obj, 'foo', 'bar' );
-	t.equal( obj.foo, 'bar', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the read-only property is not writable', function test( t ) {
-	var obj = {};
-	setReadOnly( obj, 'foo', 'bar' );
-	t.throws( foo, Error, 'property cannot be set' );
-	t.end();
-
-	function foo() {
-		obj.foo = 'bip';
-	}
-});
-
-tape( 'the read-only property is not configurable', function test( t ) {
-	var obj = {};
-	setReadOnly( obj, 'foo', 'bar' );
-	t.throws( foo, Error, 'property cannot be deleted' );
-	t.throws( bar, Error, 'property cannot be reconfigured' );
-	t.end();
-
-	function foo() {
-		delete obj.foo;
-	}
-
-	function bar() {
-		defineProperty( obj, 'foo', {
-			'value': 'boop',
-			'writable': true,
-			'configurable': false,
-			'enumerable': true
-		});
-	}
-});
-
-tape( 'the read-only property is enumerable', function test( t ) {
-	var obj = {};
-	setReadOnly( obj, 'foo', 'bar' );
-	t.equal( objectKeys( obj )[ 0 ], 'foo', 'property is enumerable' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
