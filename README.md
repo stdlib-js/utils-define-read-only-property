@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@deno/mod.js';
+import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { CHANGELOG.md, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, CONTRIBUTORS, LICENSE, Makefile, NOTICE, README.md, SECURITY.md, benchmark, branches.md, deno, dist, docs, examples, lib, node_modules, package.json, test, foo } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@deno/mod.js';
+import { CHANGELOG.md, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, CONTRIBUTORS, LICENSE, Makefile, NOTICE, README.md, SECURITY.md, benchmark, branches.md, deno, dist, docs, examples, lib, node_modules, package.json, test, foo } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.2.1-deno/mod.js';
 ```
 
 #### setReadOnly( obj, prop, value )
@@ -87,7 +87,7 @@ obj.foo = 'boop';
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@deno/mod.js';
+import setReadOnly from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@v0.2.1-deno/mod.js';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
