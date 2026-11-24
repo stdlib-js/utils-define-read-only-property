@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,21 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var defineProperty = require( '@stdlib/utils-define-property' );
-
-
-// MAIN //
+import { PropertyName } from '@stdlib/types/object';
 
 /**
 * Defines a read-only property.
 *
-* @param {Object} obj - object on which to define the property
-* @param {(string|symbol)} prop - property name
-* @param {*} value - value to set
+* ## Notes
+*
+* -   Read-only properties are enumerable and non-configurable.
+*
+* @param obj - object on which to define the property
+* @param prop - property name
+* @param value - value to set
 *
 * @example
 * var obj = {};
@@ -43,16 +44,9 @@ var defineProperty = require( '@stdlib/utils-define-property' );
 *     console.error( err.message );
 * }
 */
-function setReadOnly( obj, prop, value ) {
-	defineProperty( obj, prop, {
-		'configurable': false,
-		'enumerable': true,
-		'writable': false,
-		'value': value
-	});
-}
+declare function setReadOnly( obj: any, prop: PropertyName, value: any ): void;
 
 
 // EXPORTS //
 
-module.exports = setReadOnly;
+export = setReadOnly;
